@@ -27,5 +27,5 @@ done;
 /scripts/restartsrv_apache_php_fpm
 /usr/bin/convert --version
 for phpver in 54 55 56 70 71 72 73; do
-echo "PHP $phpver" ; /opt/cpanel/ea-php$phpver/root/usr/bin/php -m |grep imagick
+echo -n "PHP $phpver" ; /opt/cpanel/ea-php$phpver/root/usr/bin/php -m |grep imagick
 done;
